@@ -2,7 +2,7 @@
 
 function Message(){
     //JSX: Javascript XML
-    return "Hello from Ozzie!";
+    return "RETURN OF THE SLAG PIT!";
 }
 
 export default Message;
