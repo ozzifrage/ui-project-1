@@ -1,0 +1,10 @@
+body {
+    background-color: lightblue;
+  }
+
+  .top6 {background-color: #476db3; height: 50px; display:flex; align-items: center; overflow:hidden}
+
+h1 {
+  color:whitesmoke;
+  padding-left:0.5rem;
+}
