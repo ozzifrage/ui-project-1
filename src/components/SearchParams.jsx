@@ -3,6 +3,7 @@ import Slider from 'rc-slider';
 
 import React, { useState } from "react";
 import 'rc-slider/assets/index.css';
+import FancyButton from "./FancyButton";
 
 function SearchParams() {
 
@@ -70,7 +71,7 @@ function SearchParams() {
 						backgroundColor: "steelblue"
 						
 						}}
-						/>
+					/>
 
 				<div className={styles.centerJustify}>
 					<p>{settings.timeTaken} hours</p>
@@ -97,7 +98,7 @@ function SearchParams() {
 					marginTop: -5,
 					backgroundColor: "steelblue"
 					}}
-					/>
+				/>
 
 				<div className={styles.centerJustify}>
 					<p>{settings.difficulty} difficulty</p>
@@ -124,12 +125,25 @@ function SearchParams() {
 					marginTop: -5,
 					backgroundColor: "steelblue"
 					}}
-					/>
+				/>
 
 				<div className={styles.centerJustify}>
 					<p>${settings.price} in ingredients</p>
 				</div>
 			</div>
+
+			<div className={styles.backgroundBox}></div>
+
+			<div className={styles.backgroundBox}>
+                <FancyButton text= "Search with These Modifiers"></FancyButton>
+            </div>
+
+			<div style={{
+				backgroundColor: 'black',
+				width: '100%',
+				height: '100vh'
+				}}
+                />
             
         </>
     );

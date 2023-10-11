@@ -8,24 +8,29 @@ import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 function Home() {
 
     return (
-        <>
+        <div style={{
+				backgroundColor: 'black',
+				width: '100%',
+				height: '100vh'
+				}}
+                >
             <div className={styles.backgroundBox}>
                 <h1>Home Page</h1>
 
                 <RecipeRack></RecipeRack>
                 <p>Favorite Recipes</p>
 
-                <div className={styles.centerJustify}>
+                <div className={styles.buttonContainer}>
                     <Link to="/SearchParams">
                         <FancyButton text="Search our Cookbook"></FancyButton>
                     </Link>
                 </div>
                 
-                <div className={styles.centerJustify}>
+                <div className={styles.buttonContainer}>
                     <FancyButton text="Your Saved Collections"></FancyButton>
                 </div>
             </div>
-
+            
             <Switch>
 				<Route path="/SearchParams">
 					<div>
@@ -34,11 +39,7 @@ function Home() {
 					
 				</Route>
 			</Switch>
-
-            
-            
-
-        </>
+        </div>
     );
 }
 

@@ -7,6 +7,7 @@ function RecipeRack(){
         <div className={styles.recipeRack}>
 
 
+
         </div>
     );
 }
