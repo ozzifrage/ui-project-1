@@ -40,6 +40,10 @@
   background-color: grey;
   border-style:dashed;
   height:200px;
+  display: 'flex';
+  flex-direction: 'row';
+  align-items: center; 
+  overflow:hidden;
 }
 
 .sliderBox {
