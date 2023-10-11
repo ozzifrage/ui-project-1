@@ -42,13 +42,32 @@
   height:200px;
 }
 
+.sliderBox {
+  background-color: #2d2c2c;
+  border-style:none;
+  color:whitesmoke;
+  height:20%;
+  padding-top:1%;
+  padding-bottom:1%;
+  padding-left:1%;
+  padding-right:1%;
+}
+
 p {
   align-self: center;
+}
+
+.infoBox {
+  width:10%
 }
 
 .rightJustify {
   position: absolute;
   right: 0;
+}
+
+.centerJustify {
+  align-self: center;
 }
 
 .button-1:hover,

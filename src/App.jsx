@@ -34,11 +34,10 @@ function App() {
 						<Home></Home>
 					</div>
 				</Route>
-				<Route path="/RecipeParams">
+				<Route path="/SearchParams">
 					<div>
 						<SearchParams></SearchParams>
 					</div>
-					
 				</Route>
 			</Switch>
 		</Router>	

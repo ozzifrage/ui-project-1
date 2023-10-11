@@ -9,22 +9,25 @@ function Home() {
 
     return (
         <>
-            <Router>
-                <div className={styles.backgroundBox}>
-                    <h1>Home Page</h1>
-                    <RecipeRack></RecipeRack>
-                    <p>Favorite Recipes</p>
-                    <Link to="/RecipeParams">
-					    <FancyButton text="Search our Cookbook"></FancyButton>
-				    </Link>
+            <div className={styles.backgroundBox}>
+                <h1>Home Page</h1>
+
+                <RecipeRack></RecipeRack>
+                <p>Favorite Recipes</p>
+
+                <div className={styles.centerJustify}>
+                    <Link to="/SearchParams">
+                        <FancyButton text="Search our Cookbook"></FancyButton>
+                    </Link>
                 </div>
-
                 
-
-            </Router>
+                <div className={styles.centerJustify}>
+                    <FancyButton text="Your Saved Collections"></FancyButton>
+                </div>
+            </div>
 
             <Switch>
-				<Route path="/RecipeParams">
+				<Route path="/SearchParams">
 					<div>
 						<SearchParams></SearchParams>
 					</div>

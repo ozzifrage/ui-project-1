@@ -1,10 +1,7 @@
-body {
-    background-color: lightblue;
-  }
 
-  .top6 {background-color: #476db3; height: 50px; display:flex; align-items: center; overflow:hidden}
+.top6 {background-color: steelblue; height: 50px; display:flex; align-items: center; overflow:hidden}
 
 h1 {
-  color:whitesmoke;
+  color:white;
   padding-left:0.5rem;
 }
